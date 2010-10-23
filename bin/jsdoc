@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
 
-require 'jsdoc.rb'
+require 'jsdoc'
 
 JsDoc.new.run *ARGV

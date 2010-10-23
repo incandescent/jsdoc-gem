@@ -4,7 +4,7 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{jsdoc-gem}
+  s.name = %q{jsdoc}
   s.version = "0.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
@@ -26,7 +26,7 @@ Gem::Specification.new do |s|
      "Rakefile",
      "VERSION",
      "bin/jsdoc",
-     "jsdoc-gem.gemspec",
+     "jsdoc.gemspec",
      "lib/jsdoc-toolkit-2.4.0/README.txt",
      "lib/jsdoc-toolkit-2.4.0/app/frame.js",
      "lib/jsdoc-toolkit-2.4.0/app/frame/Chain.js",
@@ -139,7 +139,7 @@ Gem::Specification.new do |s|
      "lib/jsdoc-toolkit-2.4.0/templates/jsdoc/symbol.tmpl",
      "lib/jsdoc.rb",
      "test/helper.rb",
-     "test/test_jsdoc-gem.rb"
+     "test/test_jsdoc.rb"
   ]
   s.homepage = %q{http://github.com/incandescent/jsdoc-gem}
   s.rdoc_options = ["--charset=UTF-8"]
@@ -148,7 +148,7 @@ Gem::Specification.new do |s|
   s.summary = %q{Wrapper around jsdoc}
   s.test_files = [
     "test/helper.rb",
-     "test/test_jsdoc-gem.rb"
+     "test/test_jsdoc.rb"
   ]
 
   if s.respond_to? :specification_version then

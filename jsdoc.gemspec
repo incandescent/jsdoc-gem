@@ -19,11 +19,8 @@ Gem::Specification.new do |s|
      "README.rdoc"
   ]
   s.files = [
-    ".document",
-     ".gitignore",
-     "LICENSE",
+    "LICENSE",
      "README.rdoc",
-     "Rakefile",
      "VERSION",
      "bin/jsdoc",
      "jsdoc.gemspec",
@@ -137,9 +134,7 @@ Gem::Specification.new do |s|
      "lib/jsdoc-toolkit-2.4.0/templates/jsdoc/static/header.html",
      "lib/jsdoc-toolkit-2.4.0/templates/jsdoc/static/index.html",
      "lib/jsdoc-toolkit-2.4.0/templates/jsdoc/symbol.tmpl",
-     "lib/jsdoc.rb",
-     "test/helper.rb",
-     "test/test_jsdoc.rb"
+     "lib/jsdoc.rb"
   ]
   s.homepage = %q{http://github.com/incandescent/jsdoc-gem}
   s.rdoc_options = ["--charset=UTF-8"]

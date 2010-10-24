@@ -11,8 +11,7 @@ begin
     gem.homepage = "http://github.com/incandescent/jsdoc-gem"
     gem.authors = ["Aaron Hamid"]
     gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
-    gem.files.include 'lib/**/*.rb'
-    gem.files.include 'bin/**/*'
+    gem.files = Dir.glob('lib/**/*') + Dir.glob('bin/**/*') + %w(README.rdoc LICENSE VERSION jsdoc.gemspec)
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new

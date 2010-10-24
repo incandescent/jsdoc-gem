@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.authors = ["Aaron Hamid"]
   s.date = %q{2010-10-23}
   s.default_executable = %q{jsdoc}
-  s.description = %q{Wrapper around jsdoc}
+  s.description = %q{a wrapper around jsdoc}
   s.email = %q{aaron@incandescentsoftware.com}
   s.executables = ["jsdoc"]
   s.extra_rdoc_files = [
@@ -145,10 +145,10 @@ Gem::Specification.new do |s|
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.7}
-  s.summary = %q{Wrapper around jsdoc}
+  s.summary = %q{a wrapper around jsdoc}
   s.test_files = [
-    "test/helper.rb",
-     "test/test_jsdoc.rb"
+    "test/test_jsdoc.rb",
+     "test/helper.rb"
   ]
 
   if s.respond_to? :specification_version then

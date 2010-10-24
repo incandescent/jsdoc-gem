@@ -4,13 +4,15 @@ require 'rake'
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
-    gem.name = "jsdoc-gem"
+    gem.name = "jsdoc"
     gem.summary = %Q{a wrapper around jsdoc}
     gem.description = %Q{a wrapper around jsdoc}
     gem.email = "aaron@incandescentsoftware.com"
     gem.homepage = "http://github.com/incandescent/jsdoc-gem"
     gem.authors = ["Aaron Hamid"]
     gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
+    gem.files.include 'lib/**/*.rb'
+    gem.files.include 'bin/**/*'
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new

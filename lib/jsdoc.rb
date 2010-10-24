@@ -12,13 +12,12 @@ class JsDoc
   end
 
   def run(output_dir, *rest)
-    system(JAVA_EXECUTABLE,
-      "-Djsdoc.dir=#{@jsdoc_dir}",
-      "-Djsdoc.template.dir=#{@jsdoc_template_dir}",
-      '-jar', "#{@jsdoc_dir}#{S}jsrun.jar",
-      "#{@jsdoc_dir}#{S}app#{S}run.js",
-      "-t=#{@jsdoc_template_dir}",
-      "-d=#{output_dir}",
-      *rest)
+    args = %W(-Djsdoc.dir=#{@jsdoc_dir}
+              -Djsdoc.template.dir=#{@jsdoc_template_dir}
+              -jar #{@jsdoc_dir}#{S}jsrun.jar
+              #{@jsdoc_dir}#{S}app#{S}run.js
+              -t=#{@jsdoc_template_dir}
+              -d=#{output_dir}) + rest
+    system(JAVA_EXECUTABLE, *args)
   end
 end
